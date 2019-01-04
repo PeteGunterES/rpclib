@@ -22,3 +22,4 @@ reference.md
 /Debug/
 /MinSizeRel/
 *.user
+/vc14.1/rpclib/Lib/
