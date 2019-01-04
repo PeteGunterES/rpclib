@@ -14,3 +14,11 @@ report
 utils/release
 doc/all.xml
 reference.md
+/vc14.1/rpclib/.vs/
+/.vs/
+/rpc.dir/
+/vc14.1/rpclib/Int/
+/x64/
+/Debug/
+/MinSizeRel/
+*.user
