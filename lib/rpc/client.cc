@@ -21,6 +21,19 @@ using namespace RPCLIB_ASIO;
 using RPCLIB_ASIO::ip::tcp;
 using namespace rpc::detail;
 
+// @third party code Studio Gobo
+#if defined(ANDROID) || defined(__ANDROID__)
+#include <sstream>
+namespace std {
+std::string to_string(uint16_t val) {
+    std::stringstream ss;
+    ss << val;
+    return ss.str();
+}
+} // namespace std
+#endif
+// @third party code Studio Gobo
+
 namespace rpc {
 
 static constexpr uint32_t default_buffer_size = rpc::constants::DEFAULT_BUFFER_SIZE;
