@@ -47,6 +47,7 @@
 
 #ifndef _WIN32
 # include <unistd.h>
+# undef fileno
 #else
 # include <windows.h>
 # include <io.h>
