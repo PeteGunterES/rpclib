@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{d9b0336b-bad1-45c1-8824-618cb275dee1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lib\rpc\client.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\detail\client_error.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\dispatcher.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dependencies\src\format.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\nonstd\optional.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dependencies\src\posix.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\detail\response.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\rpc_error.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\server.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\detail\server_session.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\this_handler.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\this_server.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\rpc\this_session.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
