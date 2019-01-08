@@ -47,7 +47,9 @@
 
 #ifndef _WIN32
 # include <unistd.h>
+// @third party code Studio Gobo
 # undef fileno
+// @third party code Studio Gobo
 #else
 # include <windows.h>
 # include <io.h>
