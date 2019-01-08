@@ -79,6 +79,9 @@ public:
     //! \param worker_threads The number of worker threads to start.
     void async_run(std::size_t worker_threads = 1);
 
+    //! \brief polls the server queue and runs any pending RPC requests.
+    void process_pending_requests();
+
     //! \brief Binds a functor to a name so it becomes callable via RPC.
     //!
     //! This function template accepts a wide range of callables. The arguments

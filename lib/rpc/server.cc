@@ -124,6 +124,8 @@ void server::async_run(std::size_t worker_threads) {
     });
 }
 
+void server::process_pending_requests() { pimpl->io_.poll(); }
+
 void server::stop() { pimpl->stop(); }
 
 void server::close_sessions() { pimpl->close_sessions(); }
