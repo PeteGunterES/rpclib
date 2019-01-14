@@ -150,7 +150,9 @@ address_v4 address_v6::to_v4() const
 {
   if (!is_v4_mapped() && !is_v4_compatible())
   {
-    std::bad_cast ex;
+    // @third party code Studio Gobo
+    std::exception ex;
+    // @third party code Studio Gobo
     clmdep_asio::detail::throw_exception(ex);
   }
 

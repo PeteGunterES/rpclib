@@ -67,7 +67,9 @@ public:
   {
     if (source_protocol.type() != type())
     {
-      std::bad_cast ex;
+       // @third party code Studio Gobo
+      std::exception ex;
+       // @third party code Studio Gobo
       clmdep_asio::detail::throw_exception(ex);
     }
   }
