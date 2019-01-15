@@ -15,10 +15,6 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-// @third party code Studio Gobo
-#include "assert.h"
-// @third party code Studio Gobo
-
 #include "asio/detail/config.hpp"
 
 #if defined(ASIO_HAS_IOCP)
@@ -471,7 +467,7 @@ DWORD win_iocp_io_service::get_gqcs_timeout()
     // @third party code Studio Gobo
     // Hack to get project compiling on UWP as ::TerminateThread is not available on that platform
     // https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread
-#if false
+#if !ES_MODIFICATIONS
   const uint64_t condition_mask = ::VerSetConditionMask(
     0, VER_MAJORVERSION, VER_GREATER_EQUAL);
   if (!!::VerifyVersionInfo(&osvi, VER_MAJORVERSION, condition_mask))
