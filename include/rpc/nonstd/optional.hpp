@@ -762,16 +762,28 @@ public:
 
     optional_constexpr14 value_type const & value() const optional_ref_qual
     {
+        // @third party code Studio Gobo
+#if !ES_RPCLIB_MODIFICATIONS
         if ( ! has_value() )
             throw bad_optional_access();
+#else
+        assert(has_value);
+#endif
+        // @third party code Studio Gobo
 
         return contained.value();
     }
 
     optional_constexpr14 value_type & value() optional_ref_qual
     {
+        // @third party code Studio Gobo
+#if !ES_RPCLIB_MODIFICATIONS
         if ( ! has_value() )
             throw bad_optional_access();
+#else
+        assert(has_value);
+#endif
+        // @third party code Studio Gobo
 
         return contained.value();
     }
@@ -780,16 +792,28 @@ public:
 
     optional_constexpr14 value_type const && value() const optional_refref_qual
     {
+        // @third party code Studio Gobo
+#if !ES_RPCLIB_MODIFICATIONS
         if ( ! has_value() )
             throw bad_optional_access();
+#else
+        assert(has_value);
+#endif
+        // @third party code Studio Gobo
 
         return std::move( contained.value() );
     }
 
     optional_constexpr14 value_type && value() optional_refref_qual
     {
+        // @third party code Studio Gobo
+#if !ES_RPCLIB_MODIFICATIONS
         if ( ! has_value() )
             throw bad_optional_access();
+#else
+        assert(has_value);
+#endif
+        // @third party code Studio Gobo
 
         return std::move( contained.value() );
     }
