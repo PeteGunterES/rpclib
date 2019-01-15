@@ -467,7 +467,7 @@ DWORD win_iocp_io_service::get_gqcs_timeout()
     // @third party code Studio Gobo
     // Hack to get project compiling on UWP as ::TerminateThread is not available on that platform
     // https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread
-#if !ES_MODIFICATIONS
+#if !ES_RPCLIB_MODIFICATIONS
   const uint64_t condition_mask = ::VerSetConditionMask(
     0, VER_MAJORVERSION, VER_GREATER_EQUAL);
   if (!!::VerifyVersionInfo(&osvi, VER_MAJORVERSION, condition_mask))

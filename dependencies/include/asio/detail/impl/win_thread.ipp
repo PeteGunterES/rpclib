@@ -51,7 +51,7 @@ void win_thread::join()
     // @third party code Studio Gobo
     // Hack to get project compiling on UWP as ::TerminateThread is not available on that platform
     // https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread
-#if !ES_MODIFICATIONS
+#if !ES_RPCLIB_MODIFICATIONS
     ::TerminateThread(thread_, 0);
 #else
     assert(false);
