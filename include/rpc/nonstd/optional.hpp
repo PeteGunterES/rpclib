@@ -763,7 +763,7 @@ public:
     optional_constexpr14 value_type const & value() const optional_ref_qual
     {
         // @third party code Studio Gobo
-#if !ES_RPCLIB_MODIFICATIONS
+#if ES_ALLOW_WSA_INCOMPATIBLE_CODE
         if ( ! has_value() )
             throw bad_optional_access();
 #else
@@ -777,7 +777,7 @@ public:
     optional_constexpr14 value_type & value() optional_ref_qual
     {
         // @third party code Studio Gobo
-#if !ES_RPCLIB_MODIFICATIONS
+#if ES_ALLOW_WSA_INCOMPATIBLE_CODE
         if ( ! has_value() )
             throw bad_optional_access();
 #else
@@ -793,7 +793,7 @@ public:
     optional_constexpr14 value_type const && value() const optional_refref_qual
     {
         // @third party code Studio Gobo
-#if !ES_RPCLIB_MODIFICATIONS
+#if ES_ALLOW_WSA_INCOMPATIBLE_CODE
         if ( ! has_value() )
             throw bad_optional_access();
 #else
@@ -807,7 +807,7 @@ public:
     optional_constexpr14 value_type && value() optional_refref_qual
     {
         // @third party code Studio Gobo
-#if !ES_RPCLIB_MODIFICATIONS
+#if ES_ALLOW_WSA_INCOMPATIBLE_CODE
         if ( ! has_value() )
             throw bad_optional_access();
 #else
