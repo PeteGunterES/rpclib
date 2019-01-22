@@ -79,8 +79,10 @@ public:
     //! \param worker_threads The number of worker threads to start.
     void async_run(std::size_t worker_threads = 1);
 
+    // @third party code Studio Gobo
     //! \brief polls the server queue and runs any pending RPC requests.
     void process_pending_requests();
+    // @third party code Studio Gobo
 
     //! \brief Binds a functor to a name so it becomes callable via RPC.
     //!

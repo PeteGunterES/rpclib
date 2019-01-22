@@ -215,7 +215,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\include;$(SolutionDir)..\..\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <AdditionalOptions>-std=c++11</AdditionalOptions>
-      <PreprocessorDefinitions>NOMINMAX;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_MSGPACK=clmdep_msgpack;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ES_ALLOW_WSA_INCOMPATIBLE_CODE=0;NOMINMAX;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_MSGPACK=clmdep_msgpack;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -227,7 +227,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\include;$(SolutionDir)..\..\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <AdditionalOptions>-std=c++11</AdditionalOptions>
-      <PreprocessorDefinitions>NOMINMAX;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_MSGPACK=clmdep_msgpack;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ES_ALLOW_WSA_INCOMPATIBLE_CODE=0;NOMINMAX;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_MSGPACK=clmdep_msgpack;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
   </ItemDefinitionGroup>

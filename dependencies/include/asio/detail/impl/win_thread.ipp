@@ -19,6 +19,10 @@
 
 #if defined(ASIO_WINDOWS) && !defined(UNDER_CE)
 
+// @third party code Studio Gobo
+#include <assert.h>
+// @third party code Studio Gobo
+
 #include <process.h>
 #include "asio/detail/throw_error.hpp"
 #include "asio/detail/win_thread.hpp"
@@ -44,7 +48,15 @@ void win_thread::join()
   ::CloseHandle(exit_event_);
   if (terminate_threads())
   {
+    // @third party code Studio Gobo
+    // Hack to get project compiling on UWP as ::TerminateThread is not available on that platform
+    // https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread
+#if ES_ALLOW_WSA_INCOMPATIBLE_CODE
     ::TerminateThread(thread_, 0);
+#else
+    assert(false);
+#endif
+    // @third party code Studio Gobo
   }
   else
   {
