@@ -195,7 +195,7 @@
 // in_place: code duplicated in any-lite, optional-lite, variant-lite:
 //
 
-#if ! nonstd_lite_HAVE_IN_PLACE_TYPES
+#if (!defined(nonstd_lite_HAVE_IN_PLACE_TYPES)) || (!nonstd_lite_HAVE_IN_PLACE_TYPES)
 
 namespace nonstd {
 
@@ -249,7 +249,7 @@ namespace detail {
 
 // C++11 emulation:
 
-#if variant_HAVE_CONDITIONAL
+#if defined(variant_HAVE_CONDITIONAL) && variant_HAVE_CONDITIONAL
 
 using std::conditional;
 
